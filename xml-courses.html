@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon.ico?" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="xml-scripts.js"></script>
+
+	<title>Home - Smiling School</title>
+</head>
+
+<body class="courses-hero p-0 m-n3" id="courses">
+	<!-- Header -->
+	<header class="header container-fluid text-center">
+		<nav class="navbar justify-content-space-between mt-3 mb-5">
+			<div class="col-sm-4">
+				<a href="./homepage.html" class="navbar-brand my-3 ml-4">
+					<img class="smile-school-logo m-2" src="./images/smile_off.png" alt="Smile logo">
+					<img class="smile-school-logo" src="./images/logo.png" alt="Smile School logo">
+				</a>
+			</div>
+			<input type="checkbox" id="toggle-menu">
+			<label for="toggle-menu" id="hamburger-btn"></label>
+			<ul class="nav header-nav row unstyled justify-content-space-between mt-3">
+				<li class="col-sm-3 mx-2 nav-item"><a href="./courses.html" class="courses nav-link text-white">COURSES</a></li>
+				<li class="col-sm-3 mx-2 nav-item"><a href="./pricing.html" class="nav-link text-white text-center">PRICING</a></li>
+				<li class="col-sm-3 mx-2 nav-item"><a href="#" class="nav-link text-white text-center">LOGIN</a></li>
+			</ul>
+		</nav>
+
+
+		<!-- Hero Section -->
+		<section class="col-12 pt-5">
+			<div class="course-title">
+				<h1 class="text-white">« Don't cry because it's over.</h1>
+				<h1 class="text-white"><span style="color:#c271ff;">Smile</span> because it happened »</h1>
+			</div>
+		</section>
+
+		<section class="container-fluid dropdown py-4" style="background-color: #C271FF">
+			<form>
+				<div class="row">
+					<div class="col-md-12 col-lg-4 form-group">
+						<label for="keywords" class="d-block text-white">KEYWORDS</label>
+						<div class="input-group mb-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text bg-white">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</div>
+							</div>
+							<input type="text" class="form-control" placeholder="Search by keywords" style="background-color: rgb(209,149,255);">
+						</div>
+					</div>
+
+
+					<div class="col-md-4 col-lg-4 form-group">
+						<label for="topic" class="text-white">TOPIC</label>
+						<div class="input-group">
+							<select class="form-control" id="topic" style="background-color: rgb(209,149,255); color:#ffffff" ;>
+								<option value="novice" class="bg-white" style="color: black;">Novice</option>
+								<option value="intermediate" class="bg-white" style="color: black;">Intermediate</option>
+								<option value="expert" class="bg-white" style="color: black;">Expert</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-lg-4 form-group">
+						<label for="topic" class="text-white">SORT BY</label>
+						<div class="input-group">
+							<select class="form-control" id="topic" style="background-color: rgb(209,149,255); color:#ffffff;">
+								<option value="novice" class="bg-white" style="color: black;">Most Poular</option>
+								<option value="intermediate" class="bg-white" style="color: black;">Most Recent</option>
+								<option value="expert" class="bg-white" style="color: black;">Most Viewed</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+	</header>
+
+	<main>
+		<!-- Videos Section -->
+		<section class="container-fluid bg-white p-2">
+			<h5 class="pl-5 pb-5" style="color: rgba(0, 0, 0, 0.5);">11 videos</h5>
+			<div class="container my-3">
+				<div class="row mx-auto my-auto">
+					<div id="tutorials-carousel" class="carousel slide w-100" data-ride="carousel">
+						<div class="carousel-inner w-100" role="listbox">
+							<div class="col-md-6 col-lg-3">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid vid-gb-img" src="images/thumbnail_1.jpg" alt="Thumbnail 1">
+											<img src="images/play.png" alt="" class="play-btn">
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3" style="margin: 0 45rem;">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid" src="images/thumbnail_2.jpg" alt="Thumbnail 2">
+											<img src="images/play.png" alt="" class="play-btn">
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3" style="margin: 0 15rem;">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid thumbnail" src="images/thumbnail_3.jpg" alt="Thumbnail 3">
+											<img src="images/play.png" alt="" class="play-btn">
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="Profile 1" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3" style="margin: 0 30rem;">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid" src="images/thumbnail_4.jpg" alt="Thumbnail 4">
+											<div class="card-img-overlay">
+												<img src="./images/play.png" class="play-btn" alt="Play button">
+											</div>
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="Profile 2" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Carousel contols -->
+						<a class="carousel-control-prev w-auto" href="#tutorials-carousel" role="button" data-slide="prev">
+							<img src="images/arrow_black_left.png" alt="" width="20">
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next w-auto" href="#tutorials-carousel" role="button" data-slide="next">
+							<img src="images/arrow_black_right.png" alt="" width="20">
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container my-3">
+				<div class="row mx-auto my-auto">
+					<div id="tutorials-carousel" class="carousel slide w-100" data-ride="carousel">
+						<div class="carousel-inner w-100" role="listbox">
+							<div class="col-md-6 col-lg-3">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid vid-gb-img" src="images/thumbnail_1.jpg" alt="Thumbnail 1">
+											<img src="images/play.png" alt="" class="play-btn">
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3" style="margin: 0 45rem;">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid" src="images/thumbnail_2.jpg" alt="Thumbnail 2">
+											<img src="images/play.png" alt="" class="play-btn">
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3" style="margin: 0 15rem;">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid thumbnail" src="images/thumbnail_3.jpg" alt="Thumbnail 3">
+											<img src="images/play.png" alt="" class="play-btn">
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="Profile 1" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3" style="margin: 0 30rem;">
+								<div class="carousel-item active">
+									<div class="card card-body">
+										<div class="video">
+											<img class="img-fluid" src="images/thumbnail_4.jpg" alt="Thumbnail 4">
+											<div class="card-img-overlay">
+												<img src="./images/play.png" class="play-btn" alt="Play button">
+											</div>
+										</div>
+										<h5 class="card-title font-weight-bold mt-3">Diagonal Smile</h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, sonsect adipiscing elit, sed do eiusmod.</p>
+										<div class="tutorial-author d-flex align-items-center">
+											<img src="images/profile_1.jpg" alt="Profile 2" class="rounded-circle circle-thumbnail">
+											<span class="ml-2 font-weight-bold">Phillip Massey</span>
+										</div>
+										<div class="d-flex justify-content-space-between mr-auto">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_on.png" class="mt-2" alt="Star Rating">
+											<img src="./images/star_off.png" class="mt-2" alt="Star Rating">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Carousel contols -->
+						<a class="carousel-control-prev w-auto" href="#tutorials-carousel" role="button" data-slide="prev">
+							<img src="images/arrow_black_left.png" alt="" width="20">
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next w-auto" href="#tutorials-carousel" role="button" data-slide="next">
+							<img src="images/arrow_black_right.png" alt="" width="20">
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer container-fluid" style="background-color: #071629;">
+		<div class="container-fluid">
+
+			<div class="container justify-content-between align-items-center d-flex ">
+				<a class="navbar-brand my-5 ml-5">
+					<img class="smile-school-logo mr-2" src="./images/smile_off.png" alt="Smile logo">
+					<img class="smile-school-logo logo" src="./images/logo.png" alt="Smile School logo">
+				</a>
+
+				<div class="d-flex my-4 px-n3">
+					<div class="col-sm-3  my-4">
+						<span class="holberton_school-icon-ic_facebook">
+						</span>
+					</div>
+
+					<div class="col-sm-3  my-4">
+						<span class="holberton_school-icon-ic_twitter"></span>
+					</div>
+
+					<div class="col-sm-3  my-4">
+						<span class="holberton_school-icon-ic_instagram"></span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-secondary text-center py-3">© smileschool 2020</div>
+	</footer>
+</body>
+
+</html>

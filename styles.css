@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("fonts/holberton_school-icon.eot");
+  src: url("fonts/holberton_school-icon.woff") format("woff"),
+    url("fonts/holberton_school-icon.ttf") format("ttf"),
+    url("fonts/holberton_school-icon.svg") format("svg");
+}
+
+/* Variables 
+	==================== */
+:root {
+  --font-size-small: 0.9rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 2rem;
+  --font-size-xlarge: 5rem;
+  --holberton-red: #ff6565;
+  --purple-smile: #c271ff;
+  --text-color-white: #ffffff;
+  --blue-background-color: #071629;
+}
+
+body {
+  font-family: Source Sans Pro;
+  background-color: #071629;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.homepage-hero {
+  background-image: url("./images/pic_1.jpg");
+}
+
+.pricing-hero {
+  background-image: url("./images/pic_2.jpg");
+}
+
+.courses-hero {
+  background-image: url("./images/pic_3.jpg");
+}
+
+img.smile-school-logo {
+  height: 2rem;
+}
+
+.purple-text {
+  color: var(--purple-smile);
+}
+
+#courses .courses,
+#pricing .pricing {
+  color: #c271ff !important;
+  text-decoration: underline !important;
+  text-decoration-color: #ffffff !important;
+  text-decoration-thickness: 3px !important;
+}
+
+.subtitles::after {
+  content: "SMILES GRIN LAUGH";
+  display: block;
+  font-size: var(--font-size-small);
+  word-spacing: 2.5rem;
+  text-align: center;
+}
+
+.fine-print-1::after {
+  content: "$1.20/month";
+  display: block;
+  font-size: var(--font-size-small);
+}
+
+.course-title {
+  font-family: Coiny;
+}
+
+button.btn {
+  background-color: var(--purple-smile);
+  border: none;
+  border-radius: 22px;
+  margin: 1.5rem auto;
+  opacity: 0.9;
+  filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.5));
+  font-size: var(--font-size-small);
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+}
+
+.testimonials {
+  background-color: #c271ff;
+}
+
+#testimonial-carousel .carousel-item {
+  width: 100%;
+  height: 300px;
+  background-color: #c271ff;
+}
+
+#testimonial-carousel .carousel-item img {
+  width: 20%;
+  margin-left: 15%;
+}
+
+#testimonial-carousel .carousel-item .testimonial-text {
+  margin-left: 2rem;
+  width: 50%;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #c271ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-thumbnail {
+  width: 4rem;
+  height: 4rem;
+}
+
+.circle-thumb {
+  width: 6rem;
+}
+
+.testimonials {
+  background-color: var(--purple-smile);
+}
+
+#testimonial-carousel .carousel-item img {
+  width: 20%;
+  margin-left: 15%;
+}
+
+.card {
+  border: none !important;
+}
+
+.card.card-body {
+  width: 100%;
+}
+
+.col-md-6.col-lg-3 {
+  margin-right: 5rem !important;
+}
+
+.video {
+  position: relative;
+}
+
+.play-btn {
+  width: 3rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+}
+
+.duration {
+  width: 40%;
+}
+
+.rating {
+  width: 100%;
+}
+
+img.play-btn {
+  height: 3rem;
+  margin: 2.4rem 4.5rem;
+}
+
+img.smile-logo {
+  width: 3.5rem;
+}
+
+.checkmark {
+  fill: green;
+}
+
+footer {
+  position: absolute;
+}
+
+.holberton_school-icon-ic_facebook,
+.holberton_school-icon-ic_twitter,
+.holberton_school-icon-ic_instagram {
+  color: #ffffff;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header {
+    background-position: 44% 50%;
+  }
+
+  .header-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .header-nav .nav-link {
+    width: 100%;
+    margin: 0.5rem auto;
+    line-height: 1;
+  }
+
+  #hamburger-btn {
+    cursor: pointer;
+    background: white;
+    height: 2px;
+    width: 0.8rem;
+    position: absolute;
+    left: 1rem;
+    top: 20px;
+    display: block;
+  }
+
+  #hamburger-btn::before {
+    content: "";
+    background: #ffffff;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    top: -0.4rem;
+    display: block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  #hamburger-btn::after {
+    content: "";
+    background: #ffffff;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    top: 0.3rem;
+    display: block;
+    transition: all 0.2s ease;
+  }
+
+  #toggle-menu:checked ~ .header-nav {
+    display: block;
+  }
+
+  #toggle-menu:checked ~ #hamburger-btn {
+    background: transparent;
+  }
+
+  #toggle-menu:checked ~ #hamburger-btn::before {
+    transform: rotate(45deg);
+    top: 0.19rem;
+  }
+
+  #toggle-menu:checked ~ #hamburger-btn::after {
+    width: 1.34rem;
+    transform: rotate(-45deg);
+    top: 1px;
+  }
+}
+
+.break-text p {
+  text-overflow: ellipsis;
+}
+
+.vid-bg-img {
+  width: 100%;
+}
